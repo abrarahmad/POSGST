@@ -1,0 +1,70 @@
+<div class="order-summary">
+    <div class="form">
+        <div class="form-group">
+            <div class="form-label">PO approve</div>
+            <div class="form-input">
+                <p-dropdown placeholder="Select" optionLabel="name"></p-dropdown>
+            </div>
+        </div>
+        <div class="form-group">
+            <p-checkbox class="m-r-8" name="group1" value="New York" inputId="ivoice"></p-checkbox>
+            <label for="invoice">Check to enable invoice discount</label>
+        </div>
+    </div>
+    <div class="form m-l-auto">
+        <div class="form-group">
+            <div class="form-label">Gross amount</div>
+            <div class="form-input">
+                <input type="text" pInputText />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="form-label">
+                <div class="group m-b-12">
+                    <span class="inline-block m-r-8">Discount</span>
+                    <div class="p-field-radiobutton m-r-8">
+                        <p-radioButton name="discount" value="Rs" inputId="discount01"></p-radioButton>&nbsp;
+                        <label for="discount01">Rs</label>
+                    </div>
+                    <div class="p-field-radiobutton m-r-8">
+                        <p-radioButton name="discount" value="%" inputId="discount02"></p-radioButton>&nbsp;
+                        <label for="discount02">%</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-input form-input-top">
+                <input type="text" pInputText />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="form-label">Discount amt</div>
+            <div class="form-input">
+                <input type="text" pInputText />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="form-label">Total amount</div>
+            <div class="form-input">
+                <input type="text" pInputText />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="form-label">Freight charges</div>
+            <div class="form-input">
+                <input type="text" pInputText />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="form-label">Net amount</div>
+            <div class="form-input">
+                <input type="text" pInputText />
+            </div>
+        </div>
+    </div>
+</div>
+<span>Note: Please verify your entry before saving record</span>
+<div class="p-d-flex m-b-36">
+    <div class="p-ml-auto">
+        <p-button label="Save"></p-button>
+    </div>
+</div>

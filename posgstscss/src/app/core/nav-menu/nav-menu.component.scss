@@ -1,0 +1,51 @@
+::ng-deep .p-menubar {
+    background-color: #0d47a1;
+    border-radius: 0;
+    font-size: 14px;
+    padding-left: 24px;
+    padding-right: 8px;
+    .p-menuitem.p-menuitem-active > .p-menuitem-link {
+        background: #d2e8ff;
+       
+    }
+    .p-menubar-end {
+        display: none;
+    }
+
+    p-menubarsub {
+        margin-left: auto;
+    }
+
+    .p-menubar-root-list > .p-menuitem > .p-menuitem-link:not(.p-disabled) {
+        .p-menuitem-text,
+        .p-menuitem-icon,
+        .p-submenu-icon {
+            color: #ffffff;
+        }
+
+        &:hover {
+            .p-menuitem-text,
+            .p-menuitem-icon,
+            .p-submenu-icon {
+                color: #ffffff;
+            }
+        }
+    }
+}
+img.logo {
+    border-radius: 60px;
+    height:43px!important;
+  }
+@media screen and (max-width: 960px)
+{
+    ::ng-deep .p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-link:not(.p-disabled) {
+        .p-menuitem-text,
+        .p-menuitem-icon,
+        .p-submenu-icon {
+            color: #000000;
+        }
+    }
+    ::ng-deep .p-menubar .p-menuitem-link:not(.p-disabled):hover {
+        background: #d2e8ff!important;
+    }
+}

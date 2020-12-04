@@ -1,0 +1,155 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+        "Helvetica Neue", sans-serif;
+    font-size: 13px;
+    margin: 112px 0 0 0;
+    padding: 0 24px;
+
+    .p-card {
+        box-shadow: none;
+        border: 1px solid #0000004d;
+        border-radius: 3px;
+
+        .p-card-body {
+            padding: 24px;
+            @media only screen and (max-width: 820px) {
+                padding: 16px;
+            }
+        }
+
+        .p-card-content {
+            padding: 0;
+        }
+    }
+}
+
+a {
+    color: #0072bc;
+    cursor: pointer;
+}
+
+.block {
+    display: block;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.m-r-8 {
+    margin-right: 8px;
+}
+
+.m-r-12 {
+    margin-right: 12px !important;
+}
+
+.m-b-12 {
+    margin-bottom: 12px;
+}
+
+.m-b-36 {
+    margin-bottom: 36px;
+}
+
+.content {
+    padding-top: 16px;
+}
+
+.frozen-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.form {
+    .form-group {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+        font-size: 13px;
+
+        &:last-child {
+            margin: 0;
+        }
+
+        .form-label {
+            width: 180px;
+            font-size: inherit;
+            @media only screen and (max-width: 820px) {
+                width: 112px;
+            }
+        }
+        .form-label.form-label-top {
+            margin: 2px 0 auto 0;
+        }
+        .form-input {
+            width: 360px;
+            font-size: inherit;
+
+            @media only screen and (max-width: 820px) {
+                flex-grow: 1;
+            }
+
+            .p-dropdown,
+            .p-calendar,
+            .p-inputtextarea,
+            .p-inputtext {
+                width: 100%;
+            }
+        }
+        .form-input.form-input-top {
+            margin: 2px 0 auto 0;
+        }
+    }
+}
+
+.p-datatable.p-datatable-gridlines {
+    .p-datatable-header {
+        padding: 16px 0;
+        border: 0;
+        background-color: #ffffff;
+
+        @media only screen and (max-width: 820px) {
+            margin-top: 102px;
+            position: relative;
+
+            .p-inputtext {
+                width: 100%;
+            }
+
+            .grid-actions {
+                position: absolute;
+                top: -88px;
+
+                .p-button {
+                    margin-bottom: 12px;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 960px) {
+        .p-datatable-wrapper {
+            overflow-x: scroll;
+
+            table {
+                table-layout: initial;
+            }
+        }
+    }
+}
+
+.p-datatable.p-datatable-gridlines .p-datatable-thead > tr > th {
+    padding: 12px 16px;
+}
+
+@media only screen and (max-width: 820px) {
+    .p-dialog {
+        width: 90vw !important;
+    }
+}

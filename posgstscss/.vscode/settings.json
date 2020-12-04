@@ -1,0 +1,5 @@
+{
+    "git.ignoreLimitWarning": true,
+    "appService.defaultWebAppToDeploy": "/subscriptions/0ef63087-bd37-477e-b9d1-40929e32c78c/resourceGroups/demo/providers/Microsoft.Web/sites/demo-gst",
+    "appService.deploySubpath": "dist\\posgstscss"
+}

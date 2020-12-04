@@ -1,0 +1,58 @@
+<p-card>
+    <div class="form">
+        <div class="form-group">
+            <div class="form-label">Supplier name</div>
+            <div class="form-input">
+                <p-dropdown [options]="list" placeholder="Select" optionLabel="name"
+                 [filter]="true" filterBy="name" [showClear]="true"></p-dropdown>
+              
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="form-label form-label-top">Delivery location</div>
+            <div class="form-input">
+                <div class="group m-b-12">
+                    <div class="p-field-radiobutton">
+                        <p-radioButton name="location" value="Base kitchen" inputId="location01"></p-radioButton>
+                        <label for="location01">Base kitchen</label>
+                    </div>
+                    <div class="p-field-radiobutton">
+                        <p-radioButton name="location" value="Outlet" inputId="location02"></p-radioButton>
+                        <label for="location02">Outlet</label>
+                    </div>
+                    <div class="p-field-radiobutton">
+                        <p-radioButton name="location" value="Warehouse" inputId="location03"></p-radioButton>
+                        <label for="location03">Warehouse</label>
+                    </div>
+                </div>
+                <p-dropdown [options]="list" placeholder="Select" optionLabel="name"></p-dropdown>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="form-label">Delivery date</div>
+            <div class="form-input">
+                <p-calendar [showIcon]="true" inputId="icon"></p-calendar>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="form-label">PO date</div>
+            <div class="form-input">
+                <p-calendar [showIcon]="true" inputId="icon"></p-calendar>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="form-label">Remark</div>
+            <div class="form-input">
+                <textarea rows="3" pInputTextarea></textarea>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="form-label">Send email to supplier</div>
+            <div class="form-input">
+                <div class="flex-body flex-row">
+                    <p-inputSwitch></p-inputSwitch>
+                </div>
+            </div>
+        </div>
+    </div>
+</p-card>
